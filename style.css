@@ -72,7 +72,7 @@ main {
   font-size: 20px;
   text-align: left;
   letter-spacing: var(--letterSpacing);
-  padding-top: 14px;
+  padding-top: 8px;
 }
 
 #session {
