@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: clockFont;
+  src: url(fonts/digital-7-mono.ttf);
+}
+
+:root {
+  --font1: "Roboto", sans-serif;
+  --font2: "Courier New", Courier, monospace;
+  --backgroundColor1: #101010;
+  --letterSpacing: 0.7px;
+  --textShadow1: 0 0 18px rgba(10, 175, 230, 1), 0 0 18px rgba(15, 171, 224, 0);
+  --headingColor: #606060;
+  --displayColor: #086b6f;
+  --displayBorderColor: rgba(8, 107, 111, 0.3);
+  --copyColor1: #101010;
+  --copyColor2: #404040;
+  --copyColor3: #666666;
+  --copyColor3: #606060;
+  --copyColor4: #808080;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--backgroundColor1);
+}
+
+.container {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-content: center;
+  font-family: clockFont, monospace;
+  font-size: 62px;
+  color: var(--displayColor);
+  padding: 0 10px;
+}
+
+h1 {
+  font-family: var(--font1);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--headingColor);
+  text-align: center;
+  padding-top: 40px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: var(--textShadow1);
+  width: 100%;
+}
+
+.clock-display {
+  display: block;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--displayBorderColor);
+}
+
+.day {
+  font-size: 20px;
+  text-align: left;
+  letter-spacing: var(--letterSpacing);
+}
+
+#session {
+  font-size: 20px;
+  padding-left: 6px;
+}
+
+.copy {
+  background-color: var(--copyColor1);
+  color: var(--copyColor2);
+  font-family: var(--font1);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: var(--letterSpacing);
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.copy a {
+  color: var(--copyColor2);
+  text-decoration: underline dotted;
+  text-decoration-color: var(--copyColor3);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 6px;
+}
+
+.copy a:hover {
+  color: var(--copyColor2);
+  text-decoration-color: var(--copyColor4);
+}
+
+@media only screen and (max-width: 398px) {
+  .copy {
+    padding: 6px 0;
+    line-height: 1.6;
+  }
+
+  .copy2 {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .clock-display {
+    font-size: 46px;
+  }
+
+  .day {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 275px) {
+  .clock-display {
+    font-size: 32px;
+  }
+
+  .day {
+    font-size: 16px;
+  }
+}
