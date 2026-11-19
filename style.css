@@ -50,7 +50,7 @@ h1 {
   font-weight: 500;
   color: var(--headingColor);
   text-align: center;
-  padding-top: 40px;
+  padding: 40px 20px;
 }
 
 main {
@@ -72,6 +72,7 @@ main {
   font-size: 20px;
   text-align: left;
   letter-spacing: var(--letterSpacing);
+  padding-top: 14px;
 }
 
 #session {

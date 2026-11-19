@@ -45,7 +45,7 @@ function displayTime() {
   document.getElementById("hours").innerHTML = hrs;
   document.getElementById("minutes").innerHTML = min;
   document.getElementById("seconds").innerHTML = sec;
-  document.querySelector(".day").innerHTML = dateToday;
+  document.getElementById("day").innerHTML = dateToday;
 }
 
 // Set an interval to call displayTime every second (1000 milliseconds)
